@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Unispace', 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles */
+body{
+    text-shadow: 1px 1px 10px gray;
+}
+a{
+    text-decoration: none;
+    background: transparent;
+}
+a:hover{
+    color: blueviolet;
+}
+h1{
+    margin: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.button-play{
+    text-shadow: 1px 1px 10px darkblue;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(60deg,red, orange, yellow,lightgreen,cyan,violet);
+    border-radius: 10px;
+}
+
+/* Layout */
+body *{
+    display: flex;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+header{
+    flex-wrap: wrap;
+}
+header,nav{
+    display: flex;
+}
+section{
+    margin-block-start: 25%
+}
+
+
+@media (min-width: 900px){
+    body{
+        font-size: 120%;
+    }
+}
+    
+
+@media (max-width: 500px){
+    body{
+        font-size: 75%;
+    }
+}
