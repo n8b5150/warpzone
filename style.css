@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: deepskyblue;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles */
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}
+h1{
+    margin: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2,img{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* Layout */
+body *{
+    display: flex;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+header{
+    flex-wrap: wrap;
+}
+header,nav{
+    display: flex;
+}
+nav{
+    position: absolute;
+    bottom: 50px;
+}
+nav section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+/* Pipe styles */
+div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+div.pipe{
+    background: linear-gradient(darkgreen,green);
+    padding: 0;
+    margin: 0;
+}
+div.pipe-top{
+    width:100px;
+    height: 25px;
+    border-radius: 2px;
+}
+div.pipe-bottom{
+    width:75px;
+    height: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: brown;  
+    position: absolute;
+    bottom: 0;  
+}
+
+@media (max-width: 500px){
+    *{
+        font-size: 100%;
+    }
+    nav section{
+        padding: 0 .75rem;
+    }
+    div.pipe-top{
+        width:60px;
+        height: 15px;
+        border-radius: 2px;
+    }
+    div.pipe-bottom{
+        width:45px;
+        height: 60px;
+    }
+}
