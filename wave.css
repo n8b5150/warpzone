@@ -52,19 +52,15 @@ body{
 header{
     flex-wrap: wrap;
 }
-header,nav{
-    display: flex;
-}
 nav{
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     padding: 1rem;
-    justify-content: space-between;
-    margin-top: 20%;
+    margin-top: 10%;
+}
+.menu{
+    background-color: transparent;
 }
 .difficulty,.mode{
-    display: flex;
-    flex-basis: 48%;
     flex-direction: column;
     justify-content: flex-start;
     padding: .5rem;
