@@ -22,3 +22,11 @@
 //click play
 
 //start game
+
+
+function play(gameMode = 'endless', difficulty = 'normal'){
+    console.log(gameMode, difficulty)
+}
+
+play()
+play('endless','easy')

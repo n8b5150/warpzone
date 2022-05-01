@@ -27,11 +27,15 @@ h2{
     margin-bottom: 1rem;
     text-align: center;
 }
-.button-play{
+.button,.button-play{
     text-shadow: 1px 1px 10px darkblue;
     font-size: 1.5rem;
     padding: 1rem 2rem;
     background: linear-gradient(60deg,red, orange, yellow,lightgreen,cyan,violet);
+    border-radius: 10px;
+}
+nav{
+    background-color: rgb(40,40,40);
     border-radius: 10px;
 }
 
@@ -51,8 +55,27 @@ header{
 header,nav{
     display: flex;
 }
-section{
-    margin: 20%;
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.difficulty,.mode{
+    display: flex;
+    flex-basis: 48%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .5rem;
+    background-color: transparent;
+}
+.play{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: .5rem;
 }
 
 
